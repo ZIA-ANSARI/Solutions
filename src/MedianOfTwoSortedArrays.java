@@ -58,15 +58,15 @@ public class MedianOfTwoSortedArrays {
                     }
 
             }
-            if(n%2 == 0){
-                return (medianFront + medianBack)/2;
-            }
         }
 
 
 
 
-
+        
+        if(n%2 == 0){
+            return (medianFront + medianBack)/2;
+        }
         return medianFront;
     }
     

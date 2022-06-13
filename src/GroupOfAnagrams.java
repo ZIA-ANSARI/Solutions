@@ -22,17 +22,17 @@ public class GroupOfAnagrams {
                // System.out.println((int) c - 'a');
                 key[(int) c - 'a']++;
             }
-            
-            System.out.println(Arrays.toString(key));
-            if(!hash.containsKey(Arrays.toString(key))){
+            String k = Arrays.toString(key);
+            System.out.println();
+            if(!hash.containsKey(k)){
                 ArrayList<String> strs = new ArrayList<>();
                 strs.add(s[i]);
-                hash.put(Arrays.toString(key), strs);
+                hash.put(k, strs);
                 System.out.println("in if");
             }else{
-                List<String> strs = hash.get(Arrays.toString(key));
+                List<String> strs = hash.get(k);
                 strs.add(s[i]);
-                hash.put(Arrays.toString(key), strs);
+                hash.put(k, strs);
                 System.out.println("else");
             }
         }
