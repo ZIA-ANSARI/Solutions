@@ -13,7 +13,7 @@ public class EncodeAndDecode {
         encodeAndDecode.Encode(question);
     }
 
-    public static List<String> Decode(String str){
+    public  List<String> Decode(String str){
         List<String> ans = new ArrayList<>();
         int index = 0;
         while(index < str.length()){
@@ -28,7 +28,7 @@ public class EncodeAndDecode {
         return ans;
     }
     
-    public static String Encode(List<String> words){
+    public String Encode(List<String> words){
         StringBuilder sb = new StringBuilder();
         for(String str : words){
             sb.append(str.length())
